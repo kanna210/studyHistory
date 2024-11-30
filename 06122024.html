@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Information</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.flower {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flower h2 {
+    margin-top: 0;
+}
+
+.flower img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flower Information</h1>
+        <div class="flower" id="rose">
+            <h2>poppies</h2>
+            <img src="images/poppies.jpeg" alt="poppies">
+            <button onclick="toggleInfo('roseInfo')">More Info</button>
+            <div class="info" id="roseInfo">
+                <p>The rose is a type of flowering shrub. Its name comes from the Latin word Rosa. Roses are best known as ornamental plants grown for their flowers in the garden and sometimes indoors.</p>
+            </div>
+        </div>
+        <div class="flower" id="tulip">
+            <h2>cactus</h2>
+            <img src="images/cactus.jpeg" alt="cactus">
+            <button onclick="toggleInfo('tulipInfo')">More Info</button>
+            <div class="info" id="tulipInfo">
+                <p>Tulips are a genus of spring-blooming perennials that grow from bulbs. The flowers are usually large, showy, and brightly colored, generally red, pink, yellow, or white.</p>
+            </div>
+        </div>
+        <div class="flower" id="sunflower">
+            <h2>echeveria</h2>
+            <img src="images/Echeveria.jpeg" alt="echeveria">
+            <button onclick="toggleInfo('sunflowerInfo')">More Info</button>
+            <div class="info" id="sunflowerInfo">
+                <p>Sunflowers are large, bright flowers known for their large, round flower heads. They are typically yellow and are often associated with positivity and warmth.</p>
+            </div>
+        </div>
+        <div class="flower" id="orchid">
+            <h2>venus flytraps</h2>
+            <img src="images/VenusFlytraps.jpeg" alt="venus flytraps">
+            <button onclick="toggleInfo('orchidInfo')">More Info</button>
+            <div class="info" id="orchidInfo">
+                <p>Orchids are a diverse and widespread family of flowering plants with blooms that are often colorful and fragrant. Orchids are known for their complex flower structures and are popular as ornamental plants.</p>
+            </div>
+            </div>
+            </div>
+            <script src="js/06122024.js"></script>
+</body>
+</html>
+
